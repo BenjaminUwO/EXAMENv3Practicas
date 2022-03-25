@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda comercial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+   <div>
+       <h2>Registro de Productos</h2>
+   </div> 
+
+<div id="listado">
+    <nav id="menu">
+        <a href="/agregar" class="boton" id="agregar">Agregar</a>
+    </nav>
+</div>
+   <div>
+       <table>
+           <thead>
+               <th>ID</th>
+               <th>RFC</th>
+               <th>CURP</th>
+               <th>NOMBRE</th>
+               <th>CONTRASENA</th>
+           </thead>
+           <tbody id="datos">
+
+            <% for( ele of filas ) { %>
+            
+                <tr>
+                    <td>
+                        <%= ele.ID%>
+                    </td>
+                    <td>
+                        <%= ele.RFC %>
+                    </td>
+                    <td>
+                        <%=ele.CURP %>
+                    </td>
+                    <td>
+                        <%=ele.NOMBRE%>
+                    </td>
+                    <td>
+                        <%=ele.CONTRASENA%>
+                    </td>
+                    <td>
+                        <a href = "/editar/<%- ele.ID%>" class="boton" id="editar">Editar</a>
+                        <a href = "/eliminar/<%- ele.ID%>" class="boton" id="eliminar">Eliminar</a>
+                    </td>
+                </tr>
+
+            <% } %>
+
+           </tbody>
+       </table>
+   </div>
+  </body>
+
+</html>
