@@ -47,7 +47,7 @@ rutas.post("/guardar",(req, res)=>{
 
 rutas.get("/editar/:ID",(req, res)=>{
     const ID = req.params.ID
-    conexion.query(`SELECT * FROM usuarios WHERE ID= ? ` ,ID ,(error,filas)=>{
+    conexion.query(`SELECT * FROM usuarios WHERE ID = ? ` ,ID,(error,filas)=>{
         if(error)throw error
         res.render('editar',{filas:filas[0]})
     })
