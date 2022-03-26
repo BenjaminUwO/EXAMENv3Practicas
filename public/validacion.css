@@ -1,11 +1,12 @@
 
 body{
-    background-color: aliceblue;
+    background:rgb(164, 200, 231); /*color de fondo de toda la página*/
+    
 }
 
-div.container{
+div.contenedor{ /* Contenedor de espacio*/
     width: 300px;
-    height: 100px;
+    height: 150px;
     margin: 30px auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -15,18 +16,17 @@ h1{
     text-align: center;
 }
 
-img{
-    height: 100px;
+img{ /* Imágen de validación de usuario*/
+    height: 100px;/* Largo y archo*/
     width: 100px;
-    display: block;
+    display: block;  /* Alinea los elementos por líneas*/
     
-    margin-left: 50px;
+    margin-left: 50px; /*márgen a la izquierda */
     
 }
 
-div.main{
+div.principal{ /*Cuadro principal para modificar*/
     height: 250px;
-    width: 250px;
     padding: 10px 50px ;
     border-radius: 30px;
     float: center;

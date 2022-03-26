@@ -9,26 +9,34 @@
 </head>
 <body>
    <div>
-       <h1>Modificador de registros</h1>
+       <h1>Modificador de registros</h1> <!-- Título -->
    </div>
 
 
-   <div class="container">
-   <div class="main">
+   <div class="contenedor"> <!-- Contenedor  -->
+   <div class="principal" id="contenido"> <!-- Ventana principal-->
         <form id="Alumno" action="/actualizar" method="POST">
-        <input type="text" name="ID" id="ID" value="<%=filas.ID%>">
+        <br>
         <div>
-           <h4>Datos usuario</h4>
-       </div>
-
-       <div class="grupo"><input name="RFC" type="text" value="<%=filas.RFC%>" id="RFC" placeholder="RFC del usuario" required></div>
-       <div class="grupo"><input name="CURP" type="text" value="<%=filas.CURP%>" id="CURP" placeholder="CURP del usuario" required></div>
-       <div class="grupo"><input name="NOMBRE" type="text" value="<%=filas.NOMBRE%>" id="NOMBRE" placeholder="NOMBRE del usuario" required></div>
-       <div class="grupo"><input name="CONTRASENA" type="text" value="<%=filas.CONTRASENA%>" id="CONTRASENA" placeholder="CONTRASENA del usuario" required></div>
+            <h4>Datos usuario</h4>
+        </div>
+        <label for="">Id:</label><br>
+        <input type="text" name="ID" id="ID" value="<%=filas.ID%>"> <!-- value trae el id con ejs-->
+        <br><br>
+    <!--Toma todos los datos del usuario de la fila de la tabla-->
+    <label for="">RFC:</label><br>
+       <div class="grupo"><input name="RFC" type="text" value="<%=filas.RFC%>" id="RFC" placeholder="RFC del usuario" required></div><br> <!-- Trae RFC-->
+       <label for="">CURP:</label><br>
+       <div class="grupo"><input name="CURP" type="text" value="<%=filas.CURP%>" id="CURP" placeholder="CURP del usuario" required></div><br><!-- Trae CURP-->
+       <label for="">Nombre:</label><br>
+       <div class="grupo"><input name="NOMBRE" type="text" value="<%=filas.NOMBRE%>" id="NOMBRE" placeholder="NOMBRE del usuario" required></div><br> <!-- Trae NOMBRE-->
+       <label for="">Contraseña:</label><br>
+       <div class="grupo"><input name="CONTRASENA" type="text" value="<%=filas.CONTRASENA%>" id="CONTRASENA" placeholder="CONTRASENA del usuario" required></div><br> <!-- Trae Contraseña-->
         
-       <input type="submit" value="Guardar" id="guardar">
+       <input type="submit" value="Guardar" id="guardar"> <br>
        <div class="grupo">
-           <a href="/usuario">Cancelar</a>
+        <br>
+           <a href="/usuario">Cancelar</a> <!--Ir a la página usuario-->
        </div>
 
 

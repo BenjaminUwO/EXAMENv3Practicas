@@ -1,5 +1,4 @@
 let seleccionado = null
-let NL=0
 let modal=document.getElementById("modal")
 let btnAgrega=document.getElementById("btnAgrega")
 

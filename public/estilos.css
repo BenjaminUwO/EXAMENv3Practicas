@@ -9,31 +9,27 @@ body{
     padding: 80px 80px;
 }
 
-h1{
+h1{ /*titulo*/
+
     font-size: 22px;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
 }
 
-.boton{
+.boton{ /*clase boton (agregar,eliminar,editar) */
     width: 100%;
     background: 1px solid rgb(71, 143, 150);
     border: 1px solid rgb(146, 216, 225);
     background-color:rgb(104, 224, 234);
     padding: 8px;
     color: rgb(0, 0, 0);
-    margin: 10px 0;
+    margin: 10px 5px;
     font-size: 16px ;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: 2px 5px 8px rgb(122, 122, 167);
 }
 
-
-#guardar:active
-{
-    box-shadow: inset 1px 1px 1px;
-}
-table{
+table{ /*tabla*/
     margin: auto;
     background: rgb(104, 224, 234);
     width: 900px;
@@ -55,7 +51,7 @@ table{
     height: 20px;
     background:rgb(47, 144, 182);
     border: 1px solid rgb(176, 209, 240) ;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 2px;
@@ -65,7 +61,7 @@ table{
 #eliminar:hover,#editar:hover
 {
     cursor: pointer;
-    background-color: rgb(0, 14, 58);
+    background-color: rgb(21, 146, 168);
 }
 
 #eliminar:active,#editar:hover
@@ -74,3 +70,17 @@ table{
 }
 
 
+#agregar:hover{
+    cursor: pointer;
+    background-color: rgb(21, 146, 168);
+}
+
+.reg{
+    margin: auto;
+    background: rgb(104, 224, 234);
+    border-radius: 50px;
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgb(59, 118, 156);
+}

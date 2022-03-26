@@ -1,35 +1,46 @@
 
 body{
-    background-color: aliceblue;
+    background:rgb(178, 206, 231); /*color de fondo de la pagina */
 }
 
-div.container{
-    width: 300px;
-    height: 100px;
+div.contenedor{ 
+    width: 300px; /*ancho y alto del contenedor */
+    height: 100px; 
     margin: 30px auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 h1{
-    font-size: 70px;
+    font-size: 70px;/* Tamaño del título y centrado */
     text-align: center;
 }
 
-img{
-    height: 100px;
-    width: 100px;
-    display: block;
+
+div.principal{ /* Cuadro principal del formulario */
+    height: 430px;
     
-    margin-left: 50px;
+    padding: 10px 50px ; /* separación entre parte de arriba y abajo*/
+    border-radius: 30px; 
+    float: center;
+    margin-top: 5px; 
+    background: rgb(118, 236, 247); /*color de fondo del cuadro */
     
 }
 
-div.main{
-    height: 250px;
-    width: 250px;
-    padding: 10px 50px ;
-    border-radius: 30px;
-    float: center;
-    margin-top: 5px;
-    background: rgb(104, 224, 234);
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+a{
+    font-style: collapse;
+    width: 25px;
+    height: 25px;
+    background:rgb(47, 144, 182);
+    border: 1px solid rgb(176, 209, 240) ;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda comercial</title>
+    <title>USUARIO</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -15,20 +15,20 @@
 <div id="listado">
     <nav id="menu">
         <a href="/agregar" class="boton" id="agregar">Agregar</a>
-    </nav>
+    </nav><br>
 </div>
    <div>
        <table>
-           <thead>
-               <th>ID</th>
+           <thead> <!-- Encabezados -->
+               <th>ID</th> <!-- Celdas -->
                <th>RFC</th>
                <th>CURP</th>
                <th>NOMBRE</th>
                <th>CONTRASENA</th>
            </thead>
-           <tbody id="datos">
+           <tbody id="datos"> <!-- Datos de la tabla-->
 
-            <% for( ele of filas ) { %>
+            <% for( ele of filas ) { %> <!-- script integrado en html -->
             
                 <tr>
                     <td>

@@ -8,25 +8,27 @@
     <title>VALIDACIÓN USUARIO</title>
 
     <link rel="stylesheet" href="validacion.css"> <!-- archivo vinculacion.css-->
-    <script src="login.js"></script> <!-- archivo longin.javascript -->
+    <script src="login.js"></script> <!-- archivo longin.javascript para validar si es ADMIN-->
 
 </head>
 <body>
 
-    <h1>¡BIENVENIDO!</h1>
+    <h1>¡BIENVENIDO!</h1> <!-- Título-->
 
-    <div class="container"> 
+    <div class="contenedor"> 
 
-        <div class="main">
+        <div class="principal"> <!-- Cuadro principal  -->
             <img src="imagenes/usu.png" alt=""> <!-- Imagen -->
-            <form id="form_id" method="POST" name="myform"> 
-                <label>Usuario:</label> <br>
-                <input type="text" name="id" id="id" placeholder="Ingrese Usuario"><br>
+
+            <form id="form_id" method="POST" name="myform"> <!-- Formulario -->
+
+                <label>Usuario:</label> <br> <!-- Ingreso de datos -->
+                <input type="text" name="id" id="id" placeholder="Ingrese Usuario"><br> 
 
                 <label>Contraseña:</label><br>
                 <input type="password" name="contrasena" id="contrasena" placeholder="Ingrese Contraseña"><br><br>
 
-                <input type="button" value="Iniciar Sesión" id="boton" onclick="validar()"> 
+                <input type="button" value="Iniciar Sesión" id="boton" onclick="validar()"> <!-- Funcion onlick para validar -->
 
             </form>
 
@@ -34,10 +36,7 @@
                 <b class="note">¿Olvidaste tu contraseña?</b>
             </span>
 
-
-        
         </div>
     </div>
-
 </body>
 </html>
